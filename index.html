@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+           <div class="menu-container"><span onclick="openNav()">Menu</span></div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Tipping Culture by Country</a>
+                <a href="#">Restaurants Near Me</a>
+                <a href="#">Current Exchange Rates</a>
+                <a href="#">Contact</a>
+                <p class="credit">Created by JDV</p>
+              </div>
+              
+        <div class="container">
+            <h1>Travel Tip Calculator</h1>
+            <div class="wrapper">
+            <p>Bill Amount</p>
+                <input type="number" id="amount"
+                       placeholder="Total on Bill:"> 
+
+            <p>Currency Selection</p>
+            <select id="currency">
+                <option selected disabled hidden>
+                    Select
+                </option>
+                <option value="$">$ US Dollar</option>
+                <option value="$">$ AUS Dollar</option>
+                <option value="$">$ Canadian Dollar</option>
+                <option value="$">$ Hong Kong Dollar</option>
+                <option value="$">$ New Zealand Dollar</option>
+                <option value="€">€ Euro</option> 
+                <option value="£">£ Pound Sterling</option>
+                <option value="₹">₹ Indian Rupee</option>
+                <option value="¥">¥ Japanese Yen</option> 
+                <option value="₩">₩ South Korean Won</option>
+                <option value="kr">kr Norwegian Krone</option>
+                <option value="₣">₣ Swiss Franc</option>
+
+            </select>
+
+            <p>How was the service?</p>
+            <div id="service-amount">
+                <select id="services">
+                    <option selected disabled hidden>
+                        Select
+                    </option>
+                    <option value="0.25">25% - Top Notch</option>
+                    <option value="0.20">20% - Excellent</option>
+                    <option value="0.15">15% - Good</option>
+                    <option value="0.10">10% - Bad</option>
+                    <option value="0.05">5% - Worst</option>
+                </select>
+             </div>
+            <p>Total number of persons</p>
+                <input type="number" id="persons"
+                    placeholder="Number of people sharing the bill">
+
+                <button id="calculate">Calculate</button>
+            </div>
+        
+            <div class="tip">
+                <p>Tip Amount:</p>
+                <span id="total">0</span>
+                <span id="each">each</span>
+            </div>
+            
+            <div class="bill">
+                <p>Total to be Paid:</p>
+                <span id="bill-total">0</span>
+            </div>
+        
+        
+        </div> 
+    </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
