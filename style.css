@@ -1,0 +1,151 @@
+body {
+    background-color: #F5EEDC;
+    font-family: 'Sora', sans-serif;
+    color: #000!important;
+    
+}
+ 
+.container {
+    width: 355px;
+    height: 620px;
+    background-color: #DD4A48;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+ 
+h1 {
+    position: absolute;
+    left: 50%;
+    top: -60px;
+    width: 300px;
+    transform: translateX(-50%);
+    background-color: #C0D8C0;
+    font-weight: 100;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+}
+ 
+.wrapper {
+    padding: 20px;
+}
+ 
+input,
+select {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #4d5198;
+    padding: 10px;
+}
+ 
+input:focus,
+select:focus {
+    border: 1px solid #4d5198;
+    outline: none;
+}
+ 
+select {
+    width: 88% !important;
+}
+ 
+button {
+    margin: 35px 80px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Sora', sans-serif;
+    background-color: #C0D8C0;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    cursor: pointer;
+}
+
+
+.tip {
+    float: left;
+    width: 50%;
+    margin-top: -50px;
+    text-align: center;
+    font-size: 18px;
+    display: none;
+    
+}
+
+.bill{
+    float: left;
+    margin-top: -50px;
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+    display: none;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #DD4A48; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  .menu-container {
+      font-size: 25px;
+      padding: 10px 20px;
+  }
+
+  .menu-container:hover{
+      cursor: pointer;
+  }
+
+  .credit {
+    padding: 280px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+  }
